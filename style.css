@@ -1,0 +1,234 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+.wrapper {
+    background-color: blueviolet;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.containerBody {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    flex: 0, 1, 11, 1111%;
+}
+
+.mainBulkAp {
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 600;
+
+
+}
+
+.buttonHeader {
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+
+
+}
+
+.bodyContent {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 1000px;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    flex: 0 1 50%;
+}
+@media (max-width: 992px) {
+    .bodyContent {
+        justify-content: center;
+    
+    }
+}
+
+.leftPosition {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    justify-content: space-between;
+
+
+}
+
+.mainText {
+    color: azure;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 992px) {
+    .mainText {
+        font-size: 40px;
+    }
+}
+
+.textContent {
+    max-width: 400px;
+    min-width: 200px;
+    color: darkgrey;
+    font-size: 20px;
+
+}
+
+@media (max-width: 992px) {
+    .textContent {
+        max-width: 200px;
+        font-size: 15px;
+    }
+}
+
+.buttonClick {
+    background-color: azure;
+    max-width: 160px;
+    min-height: 45px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.imgPhone {
+    max-width: 500px;
+    padding: 25px;
+
+}
+
+.imgPhone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+
+}
+
+.footer {
+    background-color: bisque;
+    min-height: 50px;
+}
